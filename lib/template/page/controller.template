@@ -1,0 +1,10 @@
+import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
+import 'package:{appName}/app/pages/users/{pageNameSmall}_presenter.dart';
+
+class {pageName}Controller extends Controller {
+  final {pageName}Presenter _presenter;
+
+  @override
+  void initListeners() {
+  }
+}

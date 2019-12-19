@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_clean_architecture/flutter_clean_architecture.dart';
+
+import 'package:{appName}/data/data_users_repository.dart';
+
+import '{pageNameSmall}_controller.dart';
+
+class {pageName}View extends View {
+  @override
+  _{pageName}ViewState createState() => _{pageName}ViewState(
+    {pageName}Controller()
+  );
+}
+
+class _{pageName}ViewState extends ViewState<{pageName}View, {pageName}Controller> {
+  _{pageName}ViewState(controller) : super(controller);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Text('Hello'),
+        ),
+      ),
+    );
+  }
+}
