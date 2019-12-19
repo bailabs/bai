@@ -8,8 +8,6 @@ environment:
 
 dependencies:
   path: ^1.6.0
-  code_builder:
-  dart_style:
   recase: ^2.0.1
 
 
