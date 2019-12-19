@@ -7,10 +7,12 @@ String test1() {
   final animal = Class((b) => b
     ..name = 'Animal'
     ..extend = refer('Organism')
-    ..methods.add(Method.returnsVoid((b) => b
-      ..name = 'eat'
-      ..annotations
-      ..body = const Code("print('Yum');"))));
+    ..methods.add(Method.returnsVoid(
+      (b) => b
+        ..name = 'eat'
+        ..annotations
+        ..body = const Code(''),
+    )));
   final emitter = DartEmitter();
   return DartFormatter().format('${animal.accept(emitter)}');
 }
